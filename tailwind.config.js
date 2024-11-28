@@ -6,7 +6,9 @@ module.exports = {
     './assets/**/*.css',
   ],
   theme: {
-    extend: {},
+    extend: {
+      Peyda: ["Peyda"],
+    },
   },
   plugins: [],
 }

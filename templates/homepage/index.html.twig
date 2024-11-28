@@ -3,13 +3,25 @@
 {% block title %}Homepage{% endblock %}
 
 {% block body %}
-<div class="min-h-screen bg-red flex items-center justify-center bg-gray-100">
-    <div class="text-center">
-        <h1 class="text-4xl font-bold text-blue-600">Welcome to Symfony with Tailwind CSS!</h1>
-        <p class="mt-4 text-gray-700">Start building something amazing.</p>
-        <a href="#" class="mt-6 inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-700">
-            Get Started
-        </a>
-    </div>
-</div>
+<div class="w-full gap-2 grid grid-cols-1 mb-12 px-0">
+        <div class="relative w-full h-[60vh] sm:h-[500px] lg:h-[800px] items-center flex rounded-none ">
+          <div class="z-10 flex-col items-baseline px-4 sm:px-8">
+            <h4 class="text-white font-medium text-5xl 2xl:w-[30%] lg:text-5xl max-w-full sm:max-w-[70%] md:max-w-[50%]">
+              Un univers bien-être à portée de main
+            </h4>
+            <p class="text-white/80 mt-4 2xl:w-[30%] text-sm sm:text-base md:text-lg max-w-full sm:text-3xl sm:max-w-[70%] md:max-w-[50%]">
+              Bienvenue dans mon institut de beauté, je m&apos;appelle Jade Bosmans, je suis de la région d&apos;Enghien et je suis là pour m&apos;occuper de votre bien-être.
+            </p>
+            <div class="py-4 sm:py-5 flex lg:flex-col sm:flex-row gap-2">
+              <Button class=" duration-300 w-[25%] h-[5vh] bg-black text-white dark:bg-white dark:text-black rounded-none hover:bg-white hover:text-black ">
+                Prendre rendez-vous
+              </Button>
+              <Button class=" duration-300 w-[25%] h-[5vh] bg-white text-black   rounded-none hover:bg-black hover:text-white ">
+                En savoir plus
+              </Button>
+            </div>
+          </div>
+          <Image removeWrapper alt="Card background" class="absolute rounded-none inset-0 w-full h-full object-cover z-0" src="https://nextui.org/images/card-example-3.jpeg" />
+        </div>
+      </div>
 {% endblock %}
